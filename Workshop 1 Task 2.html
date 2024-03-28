@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://aframe.io/releases/1.0.3/aframe.min.js"></script>
+</head>
+<body>
+  <a-scene>
+    <a-sky color="#10054d"></a-sky> 
+    <a-scene>
+        <a-assets>
+            <a-asset-item id="tree" src="C:\Users\Lenovo\OneDrive\Documents\Student 1\tree\assets\scene.gltf"></a-asset-item>
+        </a-assets>
+        <a-entity gltf-model="#tree"></a-entity>
+
+    <a-entity id="camera" camera look-controls position="0 1.6 0"></a-entity>
+
+    <script>
+      var camera = document.querySelector('#camera');
+    </script>
+  </a-scene>
+</body>
+</html>
